@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/Jben13/TD_MS_githubData#readme",
   "dependencies": {
+    "apollo-boost": "^0.1.16",
     "apollo-server": "^2.1.0",
     "graphql": "^14.0.2",
+    "graphql-tools": "^4.0.0",
     "pg-promise": "^8.4.6",
     "sequelize": "^4.39.0"
   }
