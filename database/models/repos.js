@@ -2,7 +2,6 @@ const Sequelize = require('sequelize');
 const db = require('../db.js');
 
 
-
 const Repo = db.define('repo', {
   repositoryName: Sequelize.STRING,
   description: Sequelize.STRING,
@@ -17,3 +16,7 @@ const Repo = db.define('repo', {
 
 
 module.exports = Repo;
+
+/**
+ * Model represents a table in the datbase. 
+ */
