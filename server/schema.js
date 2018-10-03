@@ -1,9 +1,9 @@
 const typeDefs = `
   type Query {
-    repos: [Repos]
+    topRepos: {TopRepos}
   }
 
-  type Repos {
+  type TopRepos {
     name: String
     description: String, 
     stargazers: Int, 

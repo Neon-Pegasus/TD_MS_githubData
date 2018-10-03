@@ -3,8 +3,12 @@
 
 const resolvers = {
   Query: {
-    repos: () => repos,
+    topRepos: () => topRepos.findAll(),
   },
 };
 
 module.exports = resolvers;
+
+/**
+ * 
+ */

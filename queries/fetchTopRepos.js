@@ -42,3 +42,10 @@ query FetchTopRepos($queryString: String!) {
   }
 }
 `;
+
+/**
+ * Query to get the top Repos
+ * @param { stargazer } over 10,000 stargazer count 
+ * @param { JavaScript } language of the Repos being JavaScript 
+ * $queryString is the variable that will add the params into the query
+ */
