@@ -10,6 +10,7 @@ query FetchMemCommentsByOrg {
           pullRequests(last: 20) {
             edges {
               node {
+                title
                 body
               }
             }
