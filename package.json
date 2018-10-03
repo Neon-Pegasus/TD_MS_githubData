@@ -1,0 +1,28 @@
+{
+  "name": "TD_MS_githubData",
+  "version": "1.0.0",
+  "description": "Details:  This microservice obtains data from Github to be analyized.",
+  "main": "./server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jben13/TD_MS_githubData.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jben13/TD_MS_githubData/issues"
+  },
+  "homepage": "https://github.com/Jben13/TD_MS_githubData#readme",
+  "dependencies": {
+    "apollo-boost": "^0.1.16",
+    "apollo-server": "^2.1.0",
+    "graphql": "^14.0.2",
+    "graphql-tools": "^4.0.0",
+    "pg-promise": "^8.4.6",
+    "sequelize": "^4.39.0"
+  }
+}
