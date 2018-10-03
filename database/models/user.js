@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('../db.js');
 
-const User = db.define('user' {
+const User = db.define('user', {
   gh_userName: Sequelize.STRING,
   full_Name: Sequelize.STRING, 
   pullRequestTitle: Sequelize.STRING,
