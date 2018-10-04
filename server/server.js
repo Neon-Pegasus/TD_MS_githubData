@@ -1,9 +1,14 @@
 const { ApolloServer, gql } = require('apollo-server');
 const typeDefs = require('./schema.js');
 const resolvers = require('./resolvers.js');
+// const { psql } = require('../database/db.js');
 
 
-const server = new ApolloServer({ typeDefs, resolvers });
+
+const server = new ApolloServer({ 
+ typeDefs, 
+ resolvers,
+ });
 
 
   server.listen().then(({ url }) => {
@@ -13,7 +18,7 @@ const server = new ApolloServer({ typeDefs, resolvers });
 
 /**
  * Apollo server set up  will require...
- * @param { schema }
+ * @param { typeDefs }
  * @param { resolvers }
  * Please note that there are further parameters for setting up an Apollo Server 2.0
  * The additional paramenters can be found in the API Documents at

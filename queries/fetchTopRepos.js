@@ -2,8 +2,8 @@ import { gql } from 'apollo-server';
 // {"queryString": "language:JavaScript stars:>10000"}
 
 export default gql`
-query FetchTopRepos($queryString: String!) {
-  search(query: $queryString, type: REPOSITORY, first: 10) {
+query FetchTopRepos {
+  search(query:"language:JavaScript stars:>10000", type: REPOSITORY, first: 10) {
     repositoryCount
     edges {
       node {

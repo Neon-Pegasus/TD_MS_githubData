@@ -1,29 +1,27 @@
-const typeDefs = `
-  type Query {
-    topRepos: {TopRepos}
-  }
+// import { makeExecutableSchema } from 'graphql-tools';
 
+const { gql } = require('apollo-server');
+
+
+const typeDefs = gql`
+  type Query {
+    topRepos: [TopRepos]
+  }
+  
   type TopRepos {
     name: String
     description: String, 
     stargazers: Int, 
-    pullRequest {
-      title: String, 
-      bodyText: String, 
-      reviews{
-        state: String, 
-        bodyText: String,
-        comments {
-          bodyText: String, 
-          updatedAt: Int
+    pullRequestTitle: String, 
+    pullRequestBodyText: String, 
+    reviewState: String, 
+    reviewBodyText: String,
+    commentBodyText: String, 
+    updatedAt: Int
         }
-      }
-    }
-  }
 `;
 
-module.exports = typeDefs;
-
+  module.exports = typeDefs;
 /**
   # This is creating a query DataType for Repos 
   # Graphql is being told whenever we ask for Repos, get the following information
